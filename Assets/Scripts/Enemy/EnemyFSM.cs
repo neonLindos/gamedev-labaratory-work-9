@@ -84,7 +84,6 @@ public class EnemyFSM : MonoBehaviour
             Vector3 dir = (player.position - transform.position).normalized;
             Vector3 knockback = dir * knockbackDistance;
             playerController.Move(knockback * Time.deltaTime);
-            atackSound.Play();
         }
     }
 }
